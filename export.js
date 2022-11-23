@@ -4,7 +4,7 @@ function main() {
     function get_cats() {
         const cats_html = document.getElementsByClassName('cat-cell')
         for (let each of cats_html) {
-            cats.push(each.innerHTML)
+            cats.push(each.innerText)
         }
     }
 
@@ -20,9 +20,9 @@ function main() {
         let first = true
         for (let cell_g of row_h) {
             let cell = cell_g.querySelector('.cell')
-            let points = cell.querySelector('.points').innerHTML
-            let text = cell.querySelector('.answer').innerHTML
-            let answer = cell.querySelector('.question').innerHTML
+            let points = cell.querySelector('.points').innerText
+            let text = cell.querySelector('.answer').innerText
+            let answer = cell.querySelector('.question').innerText
             row_questions.push(text)
             row_answers.push(answer)
             if (first === true) {
