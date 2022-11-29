@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "Jeopardy Labs to CSV",
   "description": "Export a Jeopardy Labs game to a CSV Template",
-  "version": "0.1",
+  "version": "1.0",
   "action": {
     "default_popup": "popup.html"
   },
